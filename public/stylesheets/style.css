@@ -1,0 +1,96 @@
+body {
+  background-color: #ccc;
+}
+
+.container {
+  max-width: 640px;
+}
+
+#application_container {
+  background-color: #fff;
+  border-radius: 5px;
+  margin-top: 2em;
+  overflow: hidden;
+  position: relative;
+}
+
+
+#application_container > .row {
+  padding: 20px;
+}
+
+
+#scoreboard {
+  background-color: #1abc9c;
+  color: #fff;
+}
+
+#scoreboard > p {
+  font-size: large;
+  font-weight: bold;
+  text-align: center;
+}
+
+#player_choices li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#player_choices .choice a {
+  background: url(/images/Rock-50.png) top center no-repeat;
+  display: block;
+  font-weight: bold;
+  height: 2em;
+  margin: .3em;
+  padding: 70px 10px 10px;
+  text-align: center;
+}
+
+#play .submit {
+  background: url(/images/Play-50.png) top center no-repeat;
+  border: 0;
+  display: block;
+  font-weight: bold;
+  padding: 70px 10px 10px;
+}
+
+#player_choices .choice.paper a {
+  background-image: url(/images/Paper-50.png);
+}
+
+#player_choices .choice.scissors a {
+  background-image: url(/images/Scissors-50.png);
+}
+
+
+#result {
+  color: #555;
+  font-weight: bold;
+}
+
+#result .choices label {
+  display: inline-block;
+  width: 10em;
+  text-align: right;
+}
+
+#result .outcome {
+  font-size: 3em;
+  margin-top: 0;
+  position: relative;
+  top: -.2em
+}
+
+#result .play-again {
+  text-align: center;
+}
+
+#footer {
+  margin-top: 2em;
+}
+
+#footer .credits {
+  font-size: small;
+  text-align: center;
+}

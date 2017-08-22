@@ -1,0 +1,161 @@
+body {
+  background-color: #ccc;
+}
+
+.container {
+  max-width: 640px;
+}
+
+#application_container {
+  background-color: #fff;
+  border-radius: 5px;
+  margin-top: 2em;
+  overflow: hidden;
+  position: relative;
+  min-height:358px;
+}
+
+
+#application_container > .row {
+  padding: 20px;
+}
+
+
+#scoreboard {
+  background-color: #1abc9c;
+  color: #fff;
+}
+
+#scoreboard > p {
+  font-size: large;
+  font-weight: bold;
+  text-align: center;
+}
+
+#player_choices li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#player_choices button {
+  background: white;
+  border: none;
+}
+
+#player_choices .choice a {
+  background: url(/images/Rock-50.png) top center no-repeat;
+  display: block;
+  font-weight: bold;
+  height: 2em;
+  margin: .3em;
+  padding: 70px 10px 10px;
+  text-align: center;
+  background-color: white;
+  border: solid white 1px;
+
+}
+
+#play .submit {
+  background: url(/images/Play-50.png) top center no-repeat;
+  border: 0;
+  display: block;
+  font-weight: bold;
+  padding: 73px 10px 10px;
+  text-align: center;
+  color:rgb(51,122,183);
+  cursor: pointer;
+}
+
+#player_choices .choice.paper a {
+  background-image: url(/images/Paper-50.png);
+}
+
+#player_choices .choice.scissors a {
+  background-image: url(/images/Scissors-50.png);
+}
+
+
+#result {
+  color: #555;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+#result .choices label {
+  display: inline-block;
+  width: 10em;
+  text-align: right;
+}
+
+#result .outcome {
+  font-size: 3em;
+  margin-top: 0;
+  position: relative;
+  top: -.2em
+}
+
+#result .play-again {
+  text-align: center;
+}
+
+#footer {
+  margin-top: 2em;
+}
+
+#footer .credits {
+  font-size: small;
+  text-align: center;
+}
+.error {
+  margin: 0 auto;
+  text-align:center;
+  color: red;
+    -webkit-animation: fadeInFromNone 2s infinite;
+    -moz-animation: fadeInFromNone 2s infinite;
+    -o-animation: fadeInFromNone 2s infinite;
+    animation: fadeInFromNone 2s infinite;
+}
+
+
+.networkErrorParent {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2em;
+}
+.networkError {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+@-webkit-keyframes fadeInFromNone {
+    0% {
+  
+        opacity: .3;
+    }
+    25% {
+       
+        opacity: .5;
+    }
+    50% {
+       
+        opacity: .9;
+    }
+    75% {
+        
+        opacity: .5;
+    }
+
+    100% {
+        
+        opacity: .3;
+    }
+}
